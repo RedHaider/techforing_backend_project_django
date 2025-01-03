@@ -1,0 +1,26 @@
+Test the POST /api/users/register/ endpoint again with the same payload:
+json
+Copy code
+{
+    "username": "testuser",
+    "email": "testuser@example.com",
+    "first_name": "Test",
+    "last_name": "User",
+    "password": "securepassword"
+}
+--------------------------------------------------------------------------
+Endpoint: POST /api/users/login/
+Example Payload:
+json
+Copy code
+{
+    "username": "testuser",
+    "password": "securepassword"
+}
+Response (on success):
+json
+Copy code
+{
+    "refresh": "<refresh_token>",
+    "access": "<access_token>"
+}
