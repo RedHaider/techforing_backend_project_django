@@ -24,3 +24,18 @@ Copy code
     "refresh": "<refresh_token>",
     "access": "<access_token>"
 }
+
+http://127.0.0.1:8000/api/user/login/
+
+{
+    "username": "test2",
+    "password": "test2"
+}
+
+
+chickent_white_layer= mass=62g , area=62.32 cm^2
+chicken_red_layer= mass=60g , area=60.18 cm^2
+duck_pati= mass=63g , area=56.4747.32 cm^2
+chicken_country= mass=37.5g , area=37.77 cm^2
+koel= mass=10.5g , area=14.63 cm^2
+

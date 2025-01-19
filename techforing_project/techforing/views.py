@@ -19,11 +19,11 @@ def hello_world(request):
 class RegisterUserView(generics.CreateAPIView):
     queryset = User.objects.all()
     serializer_class = RegisterSerializer
-    permission_classes = [IsAuthenticated]  # This allows unauthenticated access
+    permission_classes = [AllowAny]  # This allows unauthenticated access
 
 
 class LoginUserView(generics.GenericAPIView):
-    permission_classes = [IsAuthenticated]
+    permission_classes = [AllowAny]
 
     def post(self, request, *args, **kwargs):
         username = request.data.get('username')
